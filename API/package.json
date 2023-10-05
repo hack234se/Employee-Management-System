@@ -1,0 +1,24 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -w server server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.11.1",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.27.5",
+    "@babel/preset-react": "^7.18.6",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0"
+  }
+}

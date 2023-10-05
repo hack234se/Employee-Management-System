@@ -1,0 +1,36 @@
+
+
+input Employee {
+ 
+ id:String,
+  FirstName: String
+  LastName: String
+  Age: Int
+  DateOfJoining: String
+  Title:String 
+  Department: String
+  EmployeeType: String
+  CurrentStatus: Boolean
+}
+type EmployeeDetails {
+ 
+ id:String
+  FirstName: String
+  LastName: String
+  Age: Int
+  DateOfJoining: String
+  Title:String
+  Department: String
+  EmployeeType: String
+  CurrentStatus: Boolean
+}
+type Query {
+  employeeDetails(emp_filter: String): [EmployeeDetails!]!
+  getSingleemp(id:String): EmployeeDetails
+}
+
+type Mutation {
+  addempdts(employees: Employee!):EmployeeDetails
+  employeeDelete(id:String !): EmployeeDetails
+  updateEmployee(id: String!, employee: Employee!): EmployeeDetails
+} 
